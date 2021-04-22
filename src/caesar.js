@@ -11,7 +11,7 @@ const caesarModule = (function () {
     let inputs = input.toLowerCase();
     let result = [];
     let inputLetters = [];
-    
+    // shift == -shift
     if (shift === 0 || shift < -25 || shift > 25 || shift === null || shift === "" || shift === false) {
       return false; // handles if shift is within the parameters
     }else if(encode === true && shift < 0){
