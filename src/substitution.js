@@ -10,10 +10,10 @@ const substitutionModule = (function () {
       case (alphabet === undefined):
       return false;
       case (alphabet.length != 26):
-      //return false;  What is this one doing???
+      return false;  
       default:
       for (letters of alphabet){
-      if(alphabet.indexOf(letters)!= alphabet.IndexOf(letters)) return false;
+      if(alphabet.indexOf(letters)!= alphabet.lastIndexOf(letters)) return false;
       };
     };
   };
