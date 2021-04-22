@@ -14,27 +14,27 @@ describe("substitution", () => {
         const actual = substitutionModule("You are an excellent spy", "xoyqmcgrukswaflnthdjpzibev");
         expect(actual).to.equal(expected); 
     });
-    it("should work with any kind of key with unique characters", () => {
+    it("should work with any key and special characters", () => {
         const expected = "thinkful";
         const actual = substitutionModule("jrufscpw", "xoyqmcgrukswaflnthdjpzibev", false);
         expect(actual).to.equal(expected); 
     });
-    it("should encode message using the coded alphabet", () => {
+    it("should encode with the coded alphabet", () => {
         const expected = "y&ii$r&";
         const actual = substitutionModule("message", "$wae&zrdxtfcygvuhbijnokmpl");
         expect(actual).to.equal(expected); 
     });
-    it("should work with any kind of key with unique characters", () => {
+    it("should work with any key and unique characters", () => {
         const expected = "message";
         const actual = substitutionModule("y&ii$r&", "$wae&zrdxtfcygvuhbijnokmpl", false);
         expect(actual).to.equal(expected); 
     });
-    it("should return false if the substitution alphabet is missing", () => {
+    it("should return false if the coded alphabet is missing", () => {
         const expected = false;
         const actual = substitutionModule("thinkful", "short");
         expect(actual).to.equal(expected); 
     });
-    it("should return false if the substitution alphabet does not contain unique characters", () => {
+    it("should return false if coded alphabet does not have special characters", () => {
         const expected = false;
         const actual = substitutionModule("thinkful", "abcabcabcabcabcabcabcabcyz");
         expect(actual).to.equal(expected); 
