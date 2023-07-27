@@ -1,5 +1,4 @@
 const polybiusModule = (function () {
-  // you can add any code you want within this function scope
       const alphabet = { a: 11, b: 21, c: 31, d: 41, e: 51, f: 12,
                          g: 22, h: 32, "(i/j)": 42, k: 52, l: 13,
                          m: 23, n: 33, o: 43, p: 53, q: 14, r: 24,
