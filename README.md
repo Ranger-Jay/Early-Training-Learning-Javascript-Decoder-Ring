@@ -1,1 +1,1 @@
-# Thinkful-Decoder-ring
+Decoder-ring
